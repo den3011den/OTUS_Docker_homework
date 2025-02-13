@@ -1,0 +1,19 @@
+﻿services:
+
+  webapi:
+    image: ghcr.io/den3011den/otus_docker_homework:11_0
+    #image: catalogwebapi
+    environment:
+      "ASPNETCORE_ENVIRONMENT": "Development"
+      "ASPNETCORE_URLS": "http://+:7890"      
+      "CatalogDBPostgresSQLConnection": "Host=postgres;Port=5432;Database=CatalogDB;UserId=postgres;Password=password"
+    # build:
+    #   context: Catalog_WebAPI
+    #   dockerfile: Dockerfile
+    ports:
+      - "7890:7890"
+ 
+networks:
+  default:
+    name: myLocalNetwork # создана извне: docker network create --driver=bridge myLocalNetwork
+    external: true
