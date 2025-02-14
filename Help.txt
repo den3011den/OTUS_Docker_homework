@@ -1,19 +1,19 @@
 # build image
 
-# docker build -f "C:\OTUS_CSHARP\Урок 9_Docker\OTUS_Docker_homework\Catalog_WebAPI\Dockerfile" --force-rm -t catalogwebapi_11_0_github  --build-arg "BUILD_CONFIGURATION=Debug" --label "com.microsoft.created-by=docker-desktop" --label "com.microsoft.visual-studio.project-name=Catalog_WebAPI" "C:\OTUS_CSHARP\Урок 9_Docker\OTUS_Docker_homework
+# docker build -f "C:\OTUS_CSHARP\Урок 9_Docker\OTUS_Docker_homework\Catalog_WebAPI\Dockerfile" --force-rm -t catalogwebapi_12_0_github  --build-arg "BUILD_CONFIGURATION=Debug" --label "com.microsoft.created-by=docker-desktop" --label "com.microsoft.visual-studio.project-name=Catalog_WebAPI" "C:\OTUS_CSHARP\Урок 9_Docker\OTUS_Docker_homework
 
 
 # run image
-# docker run -it -p 7890:7890 catalogwebapi_11_0_github
+# docker run -it -p 7890:7890 catalogwebapi_12_0_github
 
 # tag image
-# docker tag catalogwebapi_11_0_github ghcr.io/den3011den/otus_docker_homework:11_0
+# docker tag catalogwebapi_12_0_github ghcr.io/den3011den/otus_docker_homework:12_0
 
 # login to github packages
 # docker login ghcr.io -u den3011den -p accesstoken
 
 # push image to github packages
-# docker push ghcr.io/den3011den/otus_docker_homework:11_0 
+# docker push ghcr.io/den3011den/otus_docker_homework:12_0 
 
 # run environment
 # cmd docker.environment.start.bat

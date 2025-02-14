@@ -1,7 +1,7 @@
 ﻿services:
 
   webapi:
-    image: ghcr.io/den3011den/otus_docker_homework:11_0
+    image: ghcr.io/den3011den/otus_docker_homework:12_0
     #image: catalogwebapi
     environment:
       "ASPNETCORE_ENVIRONMENT": "Development"
